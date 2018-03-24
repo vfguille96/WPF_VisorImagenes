@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF_VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Visor de Imágenes" Height="764" Width="1280"
+        ResizeMode="CanMinimize" WindowState="Maximized" KeyDown="Window_KeyDown">
+
+    <Grid Margin="-18,0,0,0">
+        <DockPanel LastChildFill="True" Margin="10,0,-10,0" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center" Width="1272">
+                <StackPanel Width="1269">
+                    <Image x:Name="imgContenedor" Margin="131,25,130,25" Height="536">
+                    </Image>
+                    <!--<Button x:Name="btnFullScreen" Content="Button" Height="33" VerticalAlignment="Top" Margin="608,0,587,0" Click="btnFullScreen_Click" />-->
+                    <DockPanel x:Name="dockPanek" Margin="450,0,340,0">
+                        <Button x:Name="btnAnterior" Content="9" FontFamily="Webdings" Width="150" Height="70" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Click="btnAnterior_Click" Cursor="Hand" BorderBrush="#FF6CA1FF" />
+                        <Button x:Name="btnSiguiente" Content=":" FontFamily="Webdings" Width="150" Height="70" FontSize="36" FontWeight="Bold" Cursor="Hand" BorderBrush="#FF4C9DFF" Click="btnSiguiente_Click" />
+                        <Button x:Name="btnVoltear" Content="Girar" Margin="20" Click="btnVoltear_Click" Width="42" />
+                        <Button x:Name="btnSource" Content="Source" Height="29" VerticalAlignment="Top" Width="56" Margin="20" Click="btnSource_Click" />
+                    </DockPanel>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
